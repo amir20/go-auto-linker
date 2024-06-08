@@ -1,12 +1,14 @@
-console.log("content.ts updated");
 const pattern = /go\/[^ ]+/g;
 
-const replacePattern = (node: Node, children = true) => {  
+const replacePattern = (node: Node, children = true) => {
+  if (node instanceof HTMLElement && node.getAttribute("injected") === "true") {
+    return;
+  }
   if (node.nodeType === 3 && node.nodeValue) {
     const matches = node.nodeValue.match(pattern);
     if (matches) {
       const span = document.createElement("span");
-      span.dataset.injected = "true";
+      span.setAttribute("injected", "true");
       let lastIndex = 0;
       matches.forEach((match) => {
         if (!node.nodeValue) return;
@@ -32,8 +34,7 @@ const replacePattern = (node: Node, children = true) => {
     node.nodeType === 1 &&
     node.nodeName !== "SCRIPT" &&
     node.nodeName !== "STYLE"
-  ) {
-    console.log(node.childNodes);
+  ) {    
     Array.from(node.childNodes).forEach((node) =>
       replacePattern(node, children)
     );
@@ -45,9 +46,6 @@ replacePattern(document.body);
 const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
     mutation.addedNodes.forEach((node) => {
-      if (node instanceof HTMLElement && node.dataset.injected) {        
-        return;
-      }      
       replacePattern(node);
     });
   });
