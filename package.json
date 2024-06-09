@@ -1,5 +1,6 @@
 {
   "name": "go-link-auto",
+  "description": "Automatically replaces go/links with hyperlinks.",
   "private": true,
   "version": "1.0.0",
   "type": "module",
