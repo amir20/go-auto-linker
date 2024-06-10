@@ -1,9 +1,16 @@
 const pattern = /go\/[^ ]+/g;
 
 const replacePattern = (node: Node) => {
+  // skip if node is already injected
   if (node instanceof Element && node.getAttribute("injected") === "true") {
     return;
   }
+
+  // skip if parent node is already a link
+  if (node.parentNode?.nodeName === "A") {
+    return;
+  }
+
   if (node.nodeType === 3 && node.nodeValue) {
     const matches = node.nodeValue.match(pattern);
     if (matches) {
