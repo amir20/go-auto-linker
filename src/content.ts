@@ -1,7 +1,7 @@
 const pattern = /go\/[^ ]+/g;
 
-const replacePattern = (node: Node, children = true) => {
-  if (node instanceof HTMLElement && node.getAttribute("injected") === "true") {
+const replacePattern = (node: Node) => {
+  if (node instanceof Element && node.getAttribute("injected") === "true") {
     return;
   }
   if (node.nodeType === 3 && node.nodeValue) {
@@ -30,14 +30,11 @@ const replacePattern = (node: Node, children = true) => {
       node.parentNode?.replaceChild(span, node);
     }
   } else if (
-    children &&
     node.nodeType === 1 &&
     node.nodeName !== "SCRIPT" &&
     node.nodeName !== "STYLE"
-  ) {    
-    Array.from(node.childNodes).forEach((node) =>
-      replacePattern(node, children)
-    );
+  ) {
+    Array.from(node.childNodes).forEach((node) => replacePattern(node));
   }
 };
 
@@ -51,4 +48,8 @@ const observer = new MutationObserver((mutations) => {
   });
 });
 
-observer.observe(document.body, { childList: true, subtree: true, characterData: true});
+observer.observe(document.body, {
+  childList: true,
+  subtree: true,
+  characterData: true,
+});
