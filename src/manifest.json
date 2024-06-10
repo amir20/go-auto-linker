@@ -1,7 +1,9 @@
 {
-  "{{chrome}}.manifest_version": 3,  
+  "{{chrome}}.manifest_version": 3,
   "icons": {
-    "512": "icon/logo.png"
+    "64": "icon/logo-64.png",
+    "128": "icon/logo-128.png",
+    "256": "icon/logo-256.png"
   },
   "{{chrome}}.content_scripts": [
     {
