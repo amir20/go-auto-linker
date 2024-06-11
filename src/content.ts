@@ -1,4 +1,4 @@
-const pattern = /go\/[^ ]+/g;
+const pattern = /go\/[\w-]+/g;
 
 const replacePattern = (node: Node) => {
   // skip if node is already injected
