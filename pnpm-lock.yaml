@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@types/webextension-polyfill':
         specifier: ^0.12.0
-        version: 0.12.0
+        version: 0.12.1
       typescript:
         specifier: ^5.4.5
         version: 5.6.2
@@ -316,8 +316,8 @@ packages:
   '@types/node@22.5.5':
     resolution: {integrity: sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==}
 
-  '@types/webextension-polyfill@0.12.0':
-    resolution: {integrity: sha512-0d1V0jw5wswj11ijrPoUUP+kV2pHCNKDDgQSzNdD1PK5i3vQ0eHiA1xzT5mFwaqdwatrXdgkxgC4BzCQ6C9eUw==}
+  '@types/webextension-polyfill@0.12.1':
+    resolution: {integrity: sha512-xPTFWwQ8BxPevPF2IKsf4hpZNss4LxaOLZXypQH4E63BDLmcwX/RMGdI4tB4VO4Nb6xDBH3F/p4gz4wvof1o9w==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -1619,7 +1619,7 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/webextension-polyfill@0.12.0': {}
+  '@types/webextension-polyfill@0.12.1': {}
 
   abort-controller@3.0.0:
     dependencies:
