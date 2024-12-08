@@ -19,7 +19,7 @@ importers:
         version: 5.4.9(@types/node@22.9.0)
       vite-plugin-web-extension:
         specifier: ^4.1.4
-        version: 4.3.0(@types/node@22.9.0)
+        version: 4.3.1(@types/node@22.9.0)
       webextension-polyfill:
         specifier: ^0.12.0
         version: 0.12.0
@@ -1296,8 +1296,8 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
 
-  vite-plugin-web-extension@4.3.0:
-    resolution: {integrity: sha512-6oYu0drqaiMUojlp1FmYmW65tmCLGsEpMn2+re3CcuUjmSBBE6+nDSrxWrXPXXPjRllBLuMdweaHMHcf7ywArw==}
+  vite-plugin-web-extension@4.3.1:
+    resolution: {integrity: sha512-yG/07Rzk70SxLUQIfZMbNm0472gbFPkoPCAJvcGhyblTrg0FPSKfkQJ4yug0//IxoYCaTv5WIcNJCuVntUz4rQ==}
     engines: {node: '>=16'}
 
   vite@5.4.9:
@@ -1335,8 +1335,8 @@ packages:
     resolution: {integrity: sha512-8wrBCMtVhqcXP2Sup1ctSkga6uc2Bx0IIvKyT7yTFier5AXHooSI+QyQQAtTb7+E0IUCCKyTFmXqdqgum2XWGg==}
     engines: {node: '>=10.13.0'}
 
-  web-ext-run@0.2.1:
-    resolution: {integrity: sha512-5D11VcjdGkA1/xax5UWL0YeAbDySKHzWFe6EpsoPNUMw5Uk9tKk9p6GUOfcaI5N7sINKfBMZYNsTBiu5dzJB9A==}
+  web-ext-run@0.2.2:
+    resolution: {integrity: sha512-GD59q5/1wYQJXTHrljMZaBa3cCz+Jj3FMDLYgKyAa34TPcHSuMaGqp7TcLJ66PCe43C3hmbEAZd8QCpAB34eiw==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
 
   webextension-polyfill@0.10.0:
@@ -2602,7 +2602,7 @@ snapshots:
 
   uuid@8.3.2: {}
 
-  vite-plugin-web-extension@4.3.0(@types/node@22.9.0):
+  vite-plugin-web-extension@4.3.1(@types/node@22.9.0):
     dependencies:
       ajv: 8.17.1
       async-lock: 1.4.1
@@ -2613,7 +2613,7 @@ snapshots:
       lodash.uniqby: 4.7.0
       md5: 2.3.0
       vite: 5.4.9(@types/node@22.9.0)
-      web-ext-run: 0.2.1
+      web-ext-run: 0.2.2
       webextension-polyfill: 0.10.0
       yaml: 2.6.0
     transitivePeerDependencies:
@@ -2643,7 +2643,7 @@ snapshots:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
 
-  web-ext-run@0.2.1:
+  web-ext-run@0.2.2:
     dependencies:
       '@babel/runtime': 7.24.7
       '@devicefarmer/adbkit': 3.2.6
