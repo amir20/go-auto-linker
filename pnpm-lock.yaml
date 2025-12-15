@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@types/webextension-polyfill':
         specifier: ^0.12.0
-        version: 0.12.1
+        version: 0.12.4
       typescript:
         specifier: ^5.4.5
         version: 5.6.3
@@ -585,8 +585,8 @@ packages:
   '@types/node@22.9.0':
     resolution: {integrity: sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==}
 
-  '@types/webextension-polyfill@0.12.1':
-    resolution: {integrity: sha512-xPTFWwQ8BxPevPF2IKsf4hpZNss4LxaOLZXypQH4E63BDLmcwX/RMGdI4tB4VO4Nb6xDBH3F/p4gz4wvof1o9w==}
+  '@types/webextension-polyfill@0.12.4':
+    resolution: {integrity: sha512-wK8YdSI0pDiaehSLDIvtvonYmLwUUivg4Z6JCJO8rkyssMAG82cFJgwPK/V7NO61mJBLg/tXeoXQL8AFzpXZmQ==}
 
   adm-zip@0.5.16:
     resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
@@ -1966,7 +1966,7 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/webextension-polyfill@0.12.1': {}
+  '@types/webextension-polyfill@0.12.4': {}
 
   adm-zip@0.5.16: {}
 
